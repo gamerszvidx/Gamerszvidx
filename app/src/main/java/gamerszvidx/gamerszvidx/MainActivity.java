@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity
@@ -115,6 +116,11 @@ public class MainActivity extends ActionBarActivity
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void Toast(View view) {
+        Toast.makeText(this, "The Projects Page ", Toast.LENGTH_SHORT).show();
+
     }
 
     /**
